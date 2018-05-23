@@ -18,7 +18,7 @@ function create(callback) {
   }});
 };
 
-require('sharedb/test/db')({create: create, getQuery: getQuery});
+require('@teamwork/sharedb/test/db')({create: create, getQuery: getQuery});
 
 describe('mongo db', function() {
   beforeEach(function(done) {

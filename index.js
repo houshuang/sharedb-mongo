@@ -1,6 +1,6 @@
 var async = require('async');
 var mongodb = require('mongodb');
-var DB = require('sharedb').DB;
+var DB = require('@teamwork/sharedb').DB;
 
 module.exports = ShareDbMongo;
 
