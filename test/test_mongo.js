@@ -1,7 +1,7 @@
 var expect = require('expect.js');
 var mongodb = require('mongodb');
 var ShareDbMongo = require('../index');
-var getQuery = require('sharedb-mingo-memory/get-query');
+var getQuery = require('@teamwork/sharedb-mingo-memory/get-query');
 
 var mongoUrl = process.env.TEST_MONGO_URL || 'mongodb://localhost:27017/test';
 
@@ -81,7 +81,7 @@ describe('mongo db', function() {
 
   describe('query', function() {
     // Run query tests for the types of queries supported by ShareDBMingo
-    require('sharedb-mingo-memory/test/query')();
+    require('@teamwork/sharedb-mingo-memory/test/query')();
 
     it('does not allow $where queries', function(done) {
       this.db.query('testcollection', {$where: 'true'}, null, null, function(err, results) {
