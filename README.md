@@ -1,10 +1,10 @@
 # sharedb-mongo
 
-  [![NPM Version](https://img.shields.io/npm/v/sharedb-mongo.svg)](https://npmjs.org/package/sharedb-mongo)
-  [![Build Status](https://travis-ci.org/share/sharedb-mongo.svg?branch=master)](https://travis-ci.org/share/sharedb-mongo)
-  [![Coverage Status](https://coveralls.io/repos/github/share/sharedb-mongo/badge.svg?branch=master)](https://coveralls.io/github/share/sharedb-mongo?branch=master)
+  [![NPM Version](https://img.shields.io/npm/v/@teamwork/sharedb-mongo.svg)](https://npmjs.org/package/@teamwork/sharedb-mongo)
+  [![Build Status](https://travis-ci.org/Teamwork/sharedb-mongo.svg?branch=master)](https://travis-ci.org/Teamwork/sharedb-mongo)
+  [![Coverage Status](https://coveralls.io/repos/github/Teamwork/sharedb-mongo/badge.svg?branch=master)](https://coveralls.io/github/Teamwork/sharedb-mongo?branch=master)
 
-MongoDB database adapter for [sharedb](https://github.com/share/sharedb). This
+MongoDB database adapter for [sharedb](https://github.com/teamwork/sharedb). This
 driver can be used both as a snapshot store and oplog.
 
 Snapshots are stored where you'd expect (the named collection with _id=id). In
@@ -33,7 +33,7 @@ There are two ways to instantiate a sharedb-mongo wrapper:
 arguments as arguments to the module function. For example:
 
 ```javascript
-const db = require('sharedb-mongo')('mongodb://localhost:27017/test');
+const db = require('@teamwork/sharedb-mongo')('mongodb://localhost:27017/test');
 const backend = new ShareDB({db});
 ```
 
@@ -43,7 +43,7 @@ a mongo instance.
 
 ```javascript
 const mongodb = require('mongodb');
-const db = require('sharedb-mongo')({mongo: function(callback) {
+const db = require('@teamwork/sharedb-mongo')({mongo: function(callback) {
   mongodb.connect('mongodb://localhost:27017/test', callback);
 }});
 const backend = new ShareDB({db});
