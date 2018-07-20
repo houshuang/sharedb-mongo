@@ -8,16 +8,17 @@
   },
   "peerDependencies": {
     "mongodb": "^3.1.0",
-    "@teamwork/sharedb": "^1.2.0"
+    "@teamwork/sharedb": "^2.0.1"
   },
   "devDependencies": {
+    "@teamwork/ot-rich-text": "^6.3.3",
+    "@teamwork/sharedb": "^2.0.1",
+    "@teamwork/sharedb-mingo-memory": "^v1.0.5",
     "coveralls": "^3.0.1",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "mongodb": "^3.1.0",
-    "@teamwork/sharedb": "^1.2.0",
-    "@teamwork/sharedb-mingo-memory": "^v1.0.3"
+    "mongodb": "^3.1.0"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha",
