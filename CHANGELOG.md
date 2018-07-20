@@ -1,12 +1,33 @@
-## v1.0-beta
+# v2.0.3
 
-### Bugfixes
+## Non-breaking changes
+
+- Update dependencies.
+
+
+# v2.0.2
+
+## Non-breaking changes
+
+- Fix a TypeError in `ShareDbMongo.invalidOpVersionError`.
+
+
+# v2.0.1
+
+## Non-breaking changes
+
+- Improve performance of `getLinkedOps`.
+
+
+# v1.0-beta
+
+## Bugfixes
 
 * Fix `skipPoll` for queries with `$not` or `$nor`
 
 * Support Mongo 3.2
 
-### Breaking changes
+## Breaking changes
 
 * Add options argument to all public database adapter methods that read
   or write from snapshots or ops.
@@ -25,12 +46,13 @@
 
 * Deprecate `$orderby` in favor of `$sort`
 
-### Non-breaking changes
+## Non-breaking changes
 
 * Don't add {_type: {$ne: null}} in Mongo queries unless necessary
 
 * Upgrade to Mongo driver 2.x
 
-## v0.8.7
+
+# v0.8.7
 
 Beginning of changelog.
