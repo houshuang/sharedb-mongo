@@ -120,12 +120,11 @@ ShareDbMongo.prototype._flushPendingConnect = function() {
 
 ShareDbMongo.prototype._mongodbOptions = function(options) {
   if(options instanceof Object) {
-    return Object.assign(Object.assign({}, options.mongoOptions), { useNewUrlParser: true })
+    return Object.assign(Object.assign({}, options.mongoOptions), { useNewUrlParser: true });
   } else {
     return  { useNewUrlParser: true };
   }
 }
-
 
 ShareDbMongo.prototype._connect = function(mongo, options) {
   // Create the mongo connection client connections if needed
@@ -1293,7 +1292,6 @@ var collectionOperationsMap = {
         }
         return cb(null, res);
       });
-      
     });
   },
   '$mapReduce': function(collection, query, value, cb) {
