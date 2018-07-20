@@ -1,6 +1,6 @@
 {
   "name": "@teamwork/sharedb-mongo",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "MongoDB database adapter for ShareDB",
   "main": "index.js",
   "dependencies": {
