@@ -1,3 +1,10 @@
+# v3.0.0
+
+# Breaking changes
+
+- Update the major versions of the @teamwork/sharedb and @teamwork/sharedb-mingo-memory dependencies.
+
+
 # v2.0.3
 
 ## Non-breaking changes
