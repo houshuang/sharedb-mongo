@@ -8,12 +8,12 @@
   },
   "peerDependencies": {
     "mongodb": "^3.1.0",
-    "@teamwork/sharedb": "^2.0.1"
+    "@teamwork/sharedb": "^3.0.0"
   },
   "devDependencies": {
     "@teamwork/ot-rich-text": "^6.3.3",
-    "@teamwork/sharedb": "^2.0.1",
-    "@teamwork/sharedb-mingo-memory": "^v1.0.5",
+    "@teamwork/sharedb": "^3.0.0",
+    "@teamwork/sharedb-mingo-memory": "^3.0.1",
     "coveralls": "^3.0.1",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.5",
