@@ -1,5 +1,5 @@
 {
-  "name": "@teamwork/sharedb-mongo",
+  "name": "@chilifrog/sharedb-mongo",
   "version": "3.0.0",
   "description": "MongoDB database adapter for ShareDB",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "peerDependencies": {
     "mongodb": "^3.1.0",
-    "@teamwork/sharedb": "^3.0.0"
+    "@chilifrog/sharedb": "^3.0.0"
   },
   "devDependencies": {
     "@teamwork/ot-rich-text": "^6.3.3",
